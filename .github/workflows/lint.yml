@@ -11,4 +11,4 @@ jobs:
          sudo apt install pip
          pip install black
 
-      - run: black ..
+      - run: black ../learn_actions
