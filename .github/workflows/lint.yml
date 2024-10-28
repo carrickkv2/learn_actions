@@ -10,6 +10,6 @@ jobs:
       - run: |
          sudo apt install pip
          pip install black
-         black /learn_actions/unlinted.py
+         black ./unlinted.py
       
 
