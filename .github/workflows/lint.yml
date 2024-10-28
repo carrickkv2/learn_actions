@@ -2,20 +2,18 @@ name: Lint Actions Demo
 on: [push]
 jobs:
   start_linting:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code 
         uses: actions/checkut@v4
         
       - name: Set up Python
         uses: actions/python@v4
-
-      - name: Installl dependencies
+        with:
+          python-version: '3.9'
+          
       - run: |
          sudo apt install pip
          pip install black
-
-      - name: run test
-      - run: pytest test_solution.py
       
 
