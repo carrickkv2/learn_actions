@@ -10,5 +10,6 @@ jobs:
       - run: |
          sudo apt install pip
          pip install black
+         black unlinted.py
       
 
