@@ -1,0 +1,9 @@
+name: Lint Actions Demo
+on: [push pull-request]
+jobs:
+  check-bats-version:
+    runs-on: unbuntu-latest
+    steps: 
+      - uses: actions/checkut@v4
+      - run: sudo apt install pip
+      - run: pip install black
