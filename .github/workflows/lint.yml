@@ -1,12 +1,10 @@
 name: Lint Actions Demo
 on: [push]
 jobs:
-  build:
+  start_linting:
     runs-on: unbuntu-latest
     steps:
       - name: Checkout Code 
       - uses: actions/checkut@v4
 
-      - name: Install dependancies
-      - run: sudo apt install pip
-      - run: pip install black
+
