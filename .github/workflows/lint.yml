@@ -1,5 +1,5 @@
 name: Lint Actions Demo
-on: [push pull-request]
+on: [push]
 jobs:
   check-bats-version:
     runs-on: unbuntu-latest
