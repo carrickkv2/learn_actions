@@ -6,4 +6,16 @@ jobs:
     steps:
       - name: Checkout Code 
         uses: actions/checkut@v4
+        
+      - name: Set up Python
+        uses: actions/python@v4
+
+      - name: Installl dependencies
+      - run: |
+         sudo apt install pip
+         pip install black
+
+      - name: run test
+      - run: pytest test_solution.py
+      
 
