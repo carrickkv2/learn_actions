@@ -1,9 +1,12 @@
 name: Lint Actions Demo
 on: [push]
 jobs:
-  check-bats-version:
+  build:
     runs-on: unbuntu-latest
-    steps: 
+    steps:
+      - name: Checkout Code 
       - uses: actions/checkut@v4
+
+      - name: Install dependancies
       - run: sudo apt install pip
       - run: pip install black
