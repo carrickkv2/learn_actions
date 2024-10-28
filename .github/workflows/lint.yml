@@ -5,6 +5,5 @@ jobs:
     runs-on: unbuntu-latest
     steps:
       - name: Checkout Code 
-      - uses: actions/checkut@v4
-
+        uses: actions/checkut@v4
 
